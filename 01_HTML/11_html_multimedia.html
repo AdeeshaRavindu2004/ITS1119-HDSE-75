@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="web,html,css,javascrip,js,java,python">
+  <meta name="discription" content="World best web development tutorials">
+  <meta name="author" content="IJSE">
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+
+  <title>Sectioning in Web Development</title>
+  <link rel="icon" type="image/x-icon" href="/assests/favicon.ico">
+
+</head>
+<body>
+<!--/////////////////////////////// <img> tag /////////////////////////-->
+
+<img src="assests/softwareengineer.jpg" title="software engineer photo" alt="software engineer photo" >
+<img src="assests/softwareengineer.jpg" title="software engineer photo" alt="software engineer photo" width="100" >
+
+
+<!--////////////////////////////// <picture> tag ///////////////////////-->
+
+<picture>
+
+  <source srcset="assests/files/large.jpg" media="(min-width: 1000px)">
+  <source srcset="assests/files/medium2.jpg" media="(min-width: 600px)">
+  <source srcset="assests/files/small.jpg" media="(min-width: 300px)">
+
+  <img src="assests/files/small2.jpg" media="(min-width: 1000px)" type="image/jpg"  alt="images/jpg">
+</picture>
+
+
+<!--//////////////////////////// <video> tag /////////////////////////-->
+
+<video controls autoplay muted loop poster="assests/files/large.jpg">
+  <source src="assests/files/videos/car.mp4" type="video/mp4">
+  <source src="assests/files/videos/car.mp4" type="video/webm">
+  <track src="assests/files/videos/subtitles/sample.vtt" kind="subtitles" srclang="en" label="English">
+  <track src="assests/files/videos/subtitles/arabic.vtt" kind="subtitles" srclang="ar" label="Arabic">
+</video>
+
+<!--//////////////////////////// <audio> tag /////////////////////////-->
+<br>
+<audio controls muted>
+  <source src="assests/files/audios/audio_file1.mp3" type="audio/mp3">
+  <source src="assests/files/audios/audio_file2.mp3" type="audio/mp3">
+</audio>
+
+
+
+</body>
+</html>
